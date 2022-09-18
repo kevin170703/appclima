@@ -10,15 +10,15 @@ export default function Card({ min, max, name, img, onClose, id }) {
         {name}
       </NavLink>
       <div>
-        <img src={"http://openweathermap.org/img/wn/" + img + "@2x.png"} />
+        <img src={`http://openweathermap.org/img/wn/${img}@2x.png`} />
         <div className="divMinMax">
           <div className="divMin">
             <h5>Min</h5>
-            <p>{min}</p>
+            <p>{min} °C</p>
           </div>
           <div className="divMax">
             <h5>Max</h5>
-            <p>{max}</p>
+            <p>{max} °C</p>
           </div>
         </div>
       </div>
