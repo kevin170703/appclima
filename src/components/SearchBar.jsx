@@ -5,10 +5,12 @@ export default function SearchBar({ onSearch }) {
   const [city, setCity] = useState("");
   return (
     <form
+    className="from"
       onSubmit={(e) => {
         e.preventDefault();
         onSearch(city);
         setCity("");
+        
       }}
     >
       <input

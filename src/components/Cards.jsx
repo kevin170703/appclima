@@ -1,7 +1,6 @@
 import React from "react";
 import "./Cards.css";
 import Card from "./Card.jsx";
-import { Link } from "react-router-dom";
 
 export default function Cards({ cities, onClose }) {
   return (
