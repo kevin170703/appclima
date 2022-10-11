@@ -6,12 +6,14 @@ import nube from "../img/nube.png";
 
 function Nav({ onSearch }) {
   return (
-    <nav className="nav">
-      <NavLink to="/" className="title">
-        <img src={nube} alt="nube" />
-      </NavLink>
-      <SearchBar onSearch={onSearch} />
-    </nav>
+    <div className="contendorNav">
+      <nav className="nav">
+        <NavLink to="/" className="title">
+          <img src={nube} alt="nube" />
+        </NavLink>
+        <SearchBar onSearch={onSearch} />
+      </nav>
+    </div>
   );
 }
 

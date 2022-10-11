@@ -10,9 +10,14 @@
   flex-direction: column;
   width: 300px;
   margin: 30px;
-  box-shadow: 2px 5px 10px black;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(4px);
+  transition: all ease 0.5s;
+}
+
+.cardStyle:hover {
+  transform: scale(1.05);
 }
 
 .cardStyle img {
@@ -32,6 +37,7 @@
   align-self: flex-end;
   padding: 5px;
   margin: 5px;
+  cursor: pointer;
 }
 
 .divMinMax {
@@ -56,27 +62,22 @@ h5 {
   font-weight: bold;
 }
 
-@media (max-width: 600px){
-  .cardStyle{
+@media (max-width: 600px) {
+  .cardStyle {
     width: 80%;
     height: 200px;
-    
   }
-  .title{
+  .title {
     font-size: 30px;
-    
   }
 
   .cardStyle img {
-   width: max-content;
-   float: right;
-   margin: 0;
+    width: max-content;
+    float: right;
+    margin: 0;
   }
 
-  .divMinMax{
+  .divMinMax {
     width: 50%;
   }
-
-
-
 }
