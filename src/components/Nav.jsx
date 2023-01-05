@@ -8,9 +8,9 @@ function Nav({ onSearch }) {
   return (
     <div className="contendorNav">
       <nav className="nav">
-        <NavLink to="/" className="title">
+        {/* <NavLink to="/">
           <img src={nube} alt="nube" />
-        </NavLink>
+        </NavLink> */}
         <SearchBar onSearch={onSearch} />
       </nav>
     </div>
