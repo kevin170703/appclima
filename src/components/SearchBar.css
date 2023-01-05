@@ -1,17 +1,32 @@
-.busqueda {
-  border: 1px solid #fff;
-  border-right: none;
+.from {
+  border: 2px solid #fff;
   border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.busqueda {
+  color: #fff;
   height: 40px;
-  width: 250px;
+  width: 180px;
   margin-right: 5px;
   outline: none;
   font-size: 20px;
   padding-left: 10px;
+  background: transparent;
+  border: none;
+}
+
+.busqueda::placeholder {
+  color: #fff;
 }
 
 .boton {
+  color: #fff;
   border: 1px solid #fff;
+  background: transparent;
+  border: none;
   border-radius: 20px;
   height: 40px;
   width: 100px;
