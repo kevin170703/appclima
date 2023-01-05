@@ -1,20 +1,13 @@
 body {
-  background: rgb(92, 153, 222);
-  background: radial-gradient(
-    circle,
-    rgba(92, 153, 222, 1) 0%,
-    rgba(1, 21, 78, 1) 100%
-  );
-
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background: url("./img/fondo.jpg");
+  /* backdrop-filter: blur(1px); */
+  background-size: 100%;
+  min-height: 100vh;
+  font-family: sans-serif;
+  backdrop-filter: blur(2px);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: sans-serif;
 }
