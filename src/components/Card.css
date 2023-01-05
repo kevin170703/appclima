@@ -1,19 +1,53 @@
+.contentButtonandTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+}
+
 .title {
-  font-size: 40px;
-  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 100;
+  width: 98%;
 }
 
 .cardStyle {
+  color: #fff;
   border-radius: 10px;
   display: flex;
-  justify-content: center;
+  padding: 1rem 0;
+  align-items: center;
   flex-direction: column;
-  width: 300px;
+  width: 250px;
+  height: 400px;
   margin: 30px;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(20px) brightness(90%);
   transition: all ease 0.5s;
+  animation: aparecer 0.5s linear;
+}
+
+@keyframes aparecer {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.cardStyle button {
+  background-color: transparent;
+  color: white;
+  border: 0;
+  width: 20px;
+  align-self: flex-end;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 
 .cardStyle:hover {
@@ -21,26 +55,24 @@
 }
 
 .cardStyle img {
-  float: inline-end;
+  width: 200px;
 }
 
 .cardStyle h1 {
-  font-weight: 700;
+  font-weight: 100;
 }
 
-.cardStyle button {
-  background-color: red;
-  border-radius: 5px;
-  color: white;
-  border: 0;
-  width: 30px;
-  align-self: flex-end;
-  padding: 5px;
-  margin: 5px;
-  cursor: pointer;
+.temp {
+  width: 100%;
 }
 
-.divMinMax {
+.temp h5 {
+  font-size: 3rem;
+  font-weight: 100;
+  margin: -1rem 0 0 0;
+}
+
+/* .divMinMax {
   display: flex;
   width: 65%;
   margin-bottom: 20px;
@@ -49,7 +81,7 @@
 .divMin {
   width: 40%;
   margin: 10px;
-}
+} */
 
 .divMax {
   width: 40%;
@@ -60,6 +92,15 @@ h5 {
   font-size: 20px;
   margin: 10px;
   font-weight: bold;
+}
+
+.extraData {
+  text-align: start;
+}
+
+.parametros {
+  display: flex;
+  justify-content: space-between;
 }
 
 @media (max-width: 600px) {
