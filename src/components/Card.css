@@ -109,7 +109,7 @@ h5 {
   display: flex;
   justify-content: space-between;
 }
-
+/* 
 @media (max-width: 600px) {
   .cardStyle {
     width: 80%;
@@ -128,4 +128,4 @@ h5 {
   .divMinMax {
     width: 50%;
   }
-}
+} */
