@@ -1,6 +1,7 @@
 .from {
-  border: 2px solid #fff;
+  background-color: #323644;
   border-radius: 20px;
+  width: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,13 +19,8 @@
   border: none;
 }
 
-.busqueda::placeholder {
-  color: #fff;
-}
-
 .boton {
   color: #fff;
-  border: 1px solid #fff;
   background: transparent;
   border: none;
   border-radius: 20px;
