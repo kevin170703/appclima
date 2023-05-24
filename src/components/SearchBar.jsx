@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import "./SearchBar.css";
+import { CiSearch } from "react-icons/ci";
 
 export default function SearchBar({ onSearch }) {
   const [city, setCity] = useState("");
   return (
     <form
-    className="from"
+      className="from"
       onSubmit={(e) => {
         e.preventDefault();
         onSearch(city);
         setCity("");
-        
       }}
     >
       <input
@@ -20,7 +20,9 @@ export default function SearchBar({ onSearch }) {
         onChange={(e) => setCity(e.target.value)}
         className="busqueda"
       />
-      <input type="submit" className="boton" value="Buscar" />
+      <button type="submit" className="boton">
+        <CiSearch size="35" />
+      </button>
     </form>
   );
 }
