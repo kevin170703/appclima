@@ -1,3 +1,20 @@
+.cardStyle {
+  color: #fff;
+  border-radius: 30px;
+  display: flex;
+  padding: 1rem 0;
+  align-items: center;
+  flex-direction: column;
+  width: 250px;
+  height: 440px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: all ease 0.5s;
+  animation: aparecer 0.5s linear;
+  background: url("../img/background.svg");
+  background-size: 100%;
+  position: relative;
+}
+
 .contentButtonandTitle {
   display: flex;
   align-items: center;
@@ -6,34 +23,32 @@
   height: 20px;
 }
 
-.link {
+.divMinMax {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.moreDetails {
+  background-color: #262835;
   color: #fff;
   text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  margin-top: 2rem;
 }
 
 .title {
   color: #fff;
   text-decoration: none;
   font-size: 20px;
-  font-weight: 100;
+  font-weight: bold;
   width: 98%;
-}
-
-.cardStyle {
-  color: #fff;
-  border-radius: 10px;
-  display: flex;
-  padding: 1rem 0;
-  align-items: center;
-  flex-direction: column;
-  width: 250px;
-  height: 400px;
-  margin: 30px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(20px) brightness(90%);
-  transition: all ease 0.5s;
-  animation: aparecer 0.5s linear;
 }
 
 @keyframes aparecer {
@@ -48,9 +63,13 @@
 
 .cardStyle button {
   background-color: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0.5rem 0.5rem 0 0;
   color: white;
   border: 0;
-  width: 20px;
+  width: max-content;
   align-self: flex-end;
   font-size: 1.2rem;
   cursor: pointer;
@@ -59,10 +78,6 @@
 .cardStyle:hover {
   transform: scale(0.99);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-}
-
-.cardStyle img {
-  width: 200px;
 }
 
 .cardStyle h1 {
@@ -75,57 +90,18 @@
 
 .temp h5 {
   font-size: 3rem;
-  font-weight: 100;
-  margin: -1rem 0 0 0;
-}
-
-/* .divMinMax {
-  display: flex;
-  width: 65%;
-  margin-bottom: 20px;
-}
-
-.divMin {
-  width: 40%;
-  margin: 10px;
-} */
-
-.divMax {
-  width: 40%;
-  margin: 10px;
-}
-
-h5 {
-  font-size: 20px;
-  margin: 10px;
   font-weight: bold;
+  margin: -1rem 0 0 0;
 }
 
 .extraData {
   text-align: start;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
 }
 
 .parametros {
   display: flex;
   justify-content: space-between;
 }
-/* 
-@media (max-width: 600px) {
-  .cardStyle {
-    width: 80%;
-    height: 200px;
-  }
-  .title {
-    font-size: 30px;
-  }
-
-  .cardStyle img {
-    width: max-content;
-    float: right;
-    margin: 0;
-  }
-
-  .divMinMax {
-    width: 50%;
-  }
-} */
